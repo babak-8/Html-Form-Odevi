@@ -7,7 +7,7 @@ form.addEventListener("submit", function (e) {
     const soyad = document.getElementById("soyad").value;
     const telefon = document.getElementById("telefon").value;
     const email = document.getElementById("email").value;
-    const dogum = document.getElementById("dogum").value;
+    const dogum = document.getElementById("dogumlar").value;
     const uyruk = document.getElementById("uyruk").value;
     const boy = document.getElementById("boy").value;
     const instagram = document.getElementById("instagram").value;
@@ -46,4 +46,5 @@ form.addEventListener("submit", function (e) {
     alert("Başvurunuz alındı!");
     form.reset();
 });
+
 
