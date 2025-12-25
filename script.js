@@ -34,7 +34,8 @@ form.addEventListener("submit", function (e) {
         tarih: new Date().toLocaleString("tr-TR")
     };
 
-    console.log("BAŞVURULAR:", basvuru);
+    console.log(JSON.stringify(basvuru));
+
 
     alert("Başvurunuz alındı! Teşekkürler.");
 
@@ -42,3 +43,4 @@ form.addEventListener("submit", function (e) {
         form.reset();
     }, 3000);
 });
+
