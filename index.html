@@ -121,13 +121,22 @@
             <label for="dogumlar">Doğum Tarihi <span class="required">*</span></label>
             <input type="date" name="dogum" id="dogumlar" required>
 
-            <label for="ad">Cinsiyet <span class="required">*</span></label>
+           <!-- <label for="ad">Cinsiyet <span class="required">*</span></label>
             <div class="radio-group">
                 <input type="radio" name="cinsiyet" value="kadin" id="kadin" required>
                 <label for="kadin">Kadın</label>
                 <input type="radio" name="cinsiyet" value="erkek" id="erkek">
                 <label for="erkek">Erkek</label>
+            </div>-->
+            <label for="cinsiyet">Cinsiyet <span class="required">*</span></label>
+            <div class="radio-group">
+                <input type="radio" name="cinsiyet" value="kadin" id="kadin" required>
+                <label for="kadin">Kadın</label>
+            
+                <input type="radio" name="cinsiyet" value="erkek" id="erkek">
+                <label for="erkek">Erkek</label>
             </div>
+
 
             <div class="file-info">Maksimum Boyut 8 MB</div>
             
@@ -161,5 +170,6 @@
 </body>
 
 </html>
+
 
 
