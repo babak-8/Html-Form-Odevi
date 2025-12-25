@@ -1,4 +1,3 @@
-alert("JS YÜKLENDİ");
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function (e) {
@@ -13,7 +12,14 @@ form.addEventListener("submit", function (e) {
     const boy = document.getElementById("boy").value;
     const instagram = document.getElementById("instagram").value;
     const tiktok = document.getElementById("tiktok").value;
-    const cinsiyet = document.querySelector("input[name='cinsiyet']:checked").value;
+
+    const sehir = document.querySelector("select[name='sehir']").value;
+
+    // ✅ GÜVENLİ CİNSİYET
+    const seciliCinsiyet = document.querySelector("input[name='cinsiyet']:checked");
+    const cinsiyet = seciliCinsiyet ? seciliCinsiyet.value : "Seçilmedi";
+
+    // FOTOĞRAFLAR
     const foto1 = document.getElementById("foto1").files[0];
     const foto2 = document.getElementById("foto2").files[0];
     const foto3 = document.getElementById("foto3").files[0] || null;
@@ -25,27 +31,19 @@ form.addEventListener("submit", function (e) {
         email,
         dogum,
         uyruk,
-        boy: boy ? boy + "cm" : " ",
+        sehir,
+        boy: boy ? boy + " cm" : "Yok",
         cinsiyet,
         foto1: foto1 ? URL.createObjectURL(foto1) : "Yok",
         foto2: foto2 ? URL.createObjectURL(foto2) : "Yok",
-        foto3: foto3 ? URL.createObjectURL(foto3) : " ",
-        instagram: instagram ? instagram : " ",
-        tiktok: tiktok ? tiktok : " ",
+        foto3: foto3 ? URL.createObjectURL(foto3) : "Yok",
+        instagram: instagram || "Yok",
+        tiktok: tiktok || "Yok",
         tarih: new Date().toLocaleString("tr-TR")
     };
 
-    console.log("BAŞVURU:", basvuru);
+    console.log("✅ BAŞVURU OBJE:", basvuru);
+
+    alert("Başvurunuz alındı!");
     form.reset();
-
-
-
-    alert("Başvurunuz alındı! Teşekkürler.");
-
-    /*setTimeout(() => {
-        form.reset();
-    }, 3000);*/
 });
-
-
-
