@@ -9,7 +9,7 @@ form.addEventListener("submit", function (e) {
     const email = document.getElementById("email").value;
     const dogum = document.getElementById("dogum").value;
     const uyruk = document.getElementById("uyruklar").value;
-    const boy = document.getElementById("boylar").value;
+    const boy = document.getElementById("boy").value;
     const instagram = document.getElementById("instagram").value;
     const tiktok = document.getElementById("tiktok").value;
 
@@ -49,6 +49,7 @@ form.addEventListener("submit", function (e) {
         form.reset();
     }, 3000);
 });
+
 
 
 
