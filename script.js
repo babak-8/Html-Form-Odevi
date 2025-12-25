@@ -36,16 +36,17 @@ form.addEventListener("submit", function (e) {
         foto1: foto1 ? URL.createObjectURL(foto1) : "Yok",
         foto2: foto2 ? URL.createObjectURL(foto2) : "Yok",
         foto3: foto3 ? URL.createObjectURL(foto3) : "Yok",
-        instagram: instagram || "Yok",
-        tiktok: tiktok || "Yok",
+        instagram: instagram ? instagram.name : " ",
+        tiktok: tiktok ? tiktok.name : " ",
         tarih: new Date().toLocaleString("tr-TR")
     };
 
     console.log("✅ BAŞVURU OBJE:", basvuru);
 
-    alert("Başvurunuz alındı!");
+    
     form.reset();
 });
+
 
 
 
