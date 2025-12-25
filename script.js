@@ -7,7 +7,7 @@ form.addEventListener("submit", function (e) {
     const soyad = document.getElementById("soyad").value;
     const telefon = document.getElementById("telefon").value;
     const email = document.getElementById("email").value;
-    const dogum = document.getElementById("dogumlar").value;
+    const dogum = document.getElementById("dogum").value;
     const uyruk = document.getElementById("uyruklar").value;
     const boy = document.getElementById("boylar").value;
     const instagram = document.getElementById("instagram").value;
@@ -46,6 +46,7 @@ form.addEventListener("submit", function (e) {
     
     form.reset();
 });
+
 
 
 
