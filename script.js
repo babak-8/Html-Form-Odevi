@@ -1,3 +1,4 @@
+alert("JS YÜKLENDİ");
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function (e) {
@@ -45,5 +46,6 @@ form.addEventListener("submit", function (e) {
         form.reset();
     }, 3000);*/
 });
+
 
 
