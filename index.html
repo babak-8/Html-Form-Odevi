@@ -11,15 +11,15 @@
         <h2>Modellik Başvuru Formu</h2>
         
         <form method="post" enctype="multipart/form-data" action="#">
-            <label>Ad <span class="required">*</span></label>
-            <input type="text" name="ad" id="ad" placeholder="Adınızı giriniz" required>
+            <label for="ad">Ad <span class="required">*</span></label>
+            <input type="text" name="adlar" id="ad" placeholder="Adınızı giriniz" required>
 
-            <label>Soyad <span class="required">*</span></label>
-            <input type="text" name="soyad" id="soyad" placeholder="Soyadınızı giriniz" required>
+            <label for="soyad">Soyad <span class="required">*</span></label>
+            <input type="text" name="soyadi" id="soyad" placeholder="Soyadınızı giriniz" required>
 
             <div class="form-group">
-                <label for="uyruk">Uyruk <span class="required">*</span></label>
-                <select id="uyruk" id="uyruklar" name="uyruk" required>
+                <label for="uyruklar">Uyruk <span class="required">*</span></label>
+                <select id="uyruklar" name="uyruk" required>
                     <option value="">Uyruk Seçiniz</option>
                     <option value="turkiye">Türk</option>
                     <option value="abd">Amerikan</option>
@@ -59,12 +59,12 @@
                 </select>
             </div>
 
-            <label>Telefon <span class="required">*</span></label>
-            <input type="tel"  name="telefon" id="telefon" placeholder="0555 555 55 55" required>
+            <label for="telefon">Telefon <span class="required">*</span></label>
+            <input type="tel"  name="tel" id="telefon" placeholder="0555 555 55 55" required>
 
             <div class="form-group">
-                <label for="boy">Boy (cm) <span class="required">*</span></label>
-                <select id="boy" id="boylar" name="boy" required>
+                <label for="boylar">Boy (cm) <span class="required">*</span></label>
+                <select id="boylar" name="boy" required>
                     <option value="">Boy Seçiniz</option>
                     <option value="150">150 cm ve altı</option>
                     <option value="150">151 cm</option>
@@ -115,13 +115,13 @@
                 </select>
             </div>
 
-            <label>E-posta <span class="required">*</span></label>
-            <input type="email" name="email" id="email" placeholder="ornek@email.com" required>
+            <label for="email">E-posta <span class="required">*</span></label>
+            <input type="email" name="mail" id="email" placeholder="ornek@email.com" required>
 
-            <label>Doğum Tarihi <span class="required">*</span></label>
-            <input type="date" name="dogum" id="dogum" required>
+            <label for="dogumlar">Doğum Tarihi <span class="required">*</span></label>
+            <input type="date" name="dogum" id="dogumlar" required>
 
-            <label>Cinsiyet <span class="required">*</span></label>
+            <label for="ad">Cinsiyet <span class="required">*</span></label>
             <div class="radio-group">
                 <input type="radio" name="cinsiyet" value="kadin" id="kadin" required>
                 <label for="kadin">Kadın</label>
@@ -161,3 +161,4 @@
 </body>
 
 </html>
+
