@@ -13,7 +13,7 @@ form.addEventListener("submit", function (e) {
     const instagram = document.getElementById("instagram").value;
     const tiktok = document.getElementById("tiktok").value;
 
-    const sehir = document.querySelector("select[name='sehir']").value;
+
 
     // ✅ GÜVENLİ CİNSİYET
     const seciliCinsiyet = document.querySelector("input[name='cinsiyet']:checked");
@@ -31,7 +31,6 @@ form.addEventListener("submit", function (e) {
         email,
         dogum,
         uyruk,
-        sehir,
         boy: boy ? boy + " cm" : "Yok",
         cinsiyet,
         foto1: foto1 ? URL.createObjectURL(foto1) : "Yok",
@@ -47,3 +46,4 @@ form.addEventListener("submit", function (e) {
     alert("Başvurunuz alındı!");
     form.reset();
 });
+
