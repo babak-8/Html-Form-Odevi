@@ -11,167 +11,125 @@
         <h2>Modellik Başvuru Formu</h2>
         
         <form method="post" enctype="multipart/form-data" action="#">
+            <!-- Ad -->
             <label for="ad">Ad <span class="required">*</span></label>
-            <input type="text" name="adlar" id="ad" placeholder="Adınızı giriniz" required>
+            <input type="text" id="ad" name="ad" placeholder="Adınızı giriniz" required autocomplete="given-name">
 
+            <!-- Soyad -->
             <label for="soyad">Soyad <span class="required">*</span></label>
-            <input type="text" name="soyadi" id="soyad" placeholder="Soyadınızı giriniz" required>
+            <input type="text" id="soyad" name="soyad" placeholder="Soyadınızı giriniz" required autocomplete="family-name">
 
-            <div class="form-group">
-                <label for="uyruklar">Uyruk <span class="required">*</span></label>
-                <select id="uyruklar" name="uyruk" required>
-                    <option value="">Uyruk Seçiniz</option>
-                    <option value="turkiye">Türk</option>
-                    <option value="abd">Amerikan</option>
-                    <option value="ingiltere">İngiliz</option>
-                    <option value="fransa">Fransız</option>
-                    <option value="almanya">Alman</option>
-                    <option value="italya">İtalyan</option>
-                    <option value="ispanya">İspanyol</option>
-                    <option value="rusya">Rus</option>
-                    <option value="japonya">Japon</option>
-                    <option value="cin">Çinli</option>
-                    <option value="brezilya">Brezilyalı</option>
-                    <option value="kanada">Kanadalı</option>
-                    <option value="avustralya">Avustralyalı</option>
-                    <option value="hollanda">Hollandalı</option>
-                    <option value="isvec">İsveçli</option>
-                    <option value="iran">İranlı</option>
-                    <option value="irak">Iraklı</option>
-                    <option value="arjantin">Arjantinli</option>
-                    <option value="yunanistan">Yunan</option>
-                    <option value="bulgaristan">Bulgar</option>
-                    <option value="romanya">Romen</option>
-                    <option value="sirbistan">Sırp</option>
-                    <option value="hirvatistan">Hırvat</option>
-                    <option value="macaristan">Macar</option>
-                    <option value="polonya">Polonyalı</option>
-                    <option value="cekya">Çek</option>
-                    <option value="avusturya">Avusturyalı</option>
-                    <option value="isvicre">İsviçreli</option>
-                    <option value="norvec">Norveçli</option>
-                    <option value="finlandiya">Finlandiyalı</option>
-                    <option value="danimarka">Danimarkalı</option>
-                    <option value="belcika">Belçikalı</option>
-                    <option value="portekiz">Portekizli</option>
-                    <option value="ukrayna">Ukraynalı</option>
-                    <option value="diger">Diğer</option>
-                </select>
-            </div>
+            <!-- Uyruk -->
+            <label for="uyruk">Uyruk <span class="required">*</span></label>
+            <select id="uyruk" name="uyruk" required autocomplete="country-name">
+                <option value="">Uyruk Seçiniz</option>
+                <option value="turkiye">Türk</option>
+                <option value="abd">Amerikan</option>
+                <option value="ingiltere">İngiliz</option>
+                <option value="fransa">Fransız</option>
+                <option value="almanya">Alman</option>
+                <option value="italya">İtalyan</option>
+                <option value="ispanya">İspanyol</option>
+                <option value="rusya">Rus</option>
+                <option value="japonya">Japon</option>
+                <option value="cin">Çinli</option>
+                <option value="brezilya">Brezilyalı</option>
+                <option value="kanada">Kanadalı</option>
+                <option value="avustralya">Avustralyalı</option>
+                <option value="diger">Diğer</option>
+            </select>
 
+            <!-- Telefon -->
             <label for="telefon">Telefon <span class="required">*</span></label>
-            <input type="tel"  name="tel" id="telefon" placeholder="0555 555 55 55" required>
+            <input type="tel" id="telefon" name="telefon" placeholder="0555 555 55 55" required autocomplete="tel">
 
-            <div class="form-group">
-                <label for="boylar">Boy (cm) <span class="required">*</span></label>
-                <select id="boylar" name="boy" required>
-                    <option value="">Boy Seçiniz</option>
-                    <option value="150">150 cm ve altı</option>
-                    <option value="150">151 cm</option>
-                    <option value="152">152 cm</option>
-                    <option value="153">153 cm</option>
-                    <option value="155">154 cm</option>
-                    <option value="155">155 cm</option>
-                    <option value="160">156 cm</option>
-                    <option value="160">157 cm</option>
-                    <option value="160">158 cm</option>
-                    <option value="160">159 cm</option>
-                    <option value="160">160 cm</option>
-                    <option value="165">161 cm</option>
-                    <option value="165">162 cm</option>
-                    <option value="165">163 cm</option>
-                    <option value="165">164 cm</option>
-                    <option value="165">165 cm</option>
-                    <option value="170">166 cm</option>
-                    <option value="170">167 cm</option>
-                    <option value="170">168 cm</option>
-                    <option value="170">169 cm</option>
-                    <option value="170">170 cm</option>
-                    <option value="175">171 cm</option>
-                    <option value="175">172 cm</option>
-                    <option value="175">173 cm</option>
-                    <option value="175">174 cm</option>
-                    <option value="175">175 cm</option>
-                    <option value="180">176 cm</option>
-                    <option value="180">177 cm</option>
-                    <option value="180">178 cm</option>
-                    <option value="180">179 cm</option>
-                    <option value="180">180 cm</option>
-                    <option value="185">181 cm</option>
-                    <option value="185">182 cm</option>
-                    <option value="185">183 cm</option>
-                    <option value="185">184 cm</option>
-                    <option value="185">185 cm</option>
-                    <option value="190">186 cm</option>
-                    <option value="190">187 cm</option>
-                    <option value="190">188 cm</option>
-                    <option value="190">189 cm</option>
-                    <option value="190">190 cm</option>
-                    <option value="195">191 cm</option>
-                    <option value="195">192 cm</option>
-                    <option value="195">193 cm</option>
-                    <option value="195">194 cm</option>
-                    <option value="195">195 cm ve üzeri</option>
-                </select>
-            </div>
+            <!-- Boy -->
+            <label for="boy">Boy (cm) <span class="required">*</span></label>
+            <select id="boy" name="boy" required>
+                <option value="">Boy Seçiniz</option>
+                <option value="150">150 cm ve altı</option>
+                <option value="151">151 cm</option>
+                <option value="152">152 cm</option>
+                <option value="153">153 cm</option>
+                <option value="154">154 cm</option>
+                <option value="155">155 cm</option>
+                <option value="156">156 cm</option>
+                <option value="157">157 cm</option>
+                <option value="158">158 cm</option>
+                <option value="159">159 cm</option>
+                <option value="160">160 cm</option>
+                <option value="161">161 cm</option>
+                <option value="162">162 cm</option>
+                <option value="163">163 cm</option>
+                <option value="164">164 cm</option>
+                <option value="165">165 cm</option>
+                <option value="166">166 cm</option>
+                <option value="167">167 cm</option>
+                <option value="168">168 cm</option>
+                <option value="169">169 cm</option>
+                <option value="170">170 cm</option>
+                <option value="171">171 cm</option>
+                <option value="172">172 cm</option>
+                <option value="173">173 cm</option>
+                <option value="174">174 cm</option>
+                <option value="175">175 cm</option>
+                <option value="176">176 cm</option>
+                <option value="177">177 cm</option>
+                <option value="178">178 cm</option>
+                <option value="179">179 cm</option>
+                <option value="180">180 cm</option>
+                <option value="181">181 cm</option>
+                <option value="182">182 cm</option>
+                <option value="183">183 cm</option>
+                <option value="184">184 cm</option>
+                <option value="185">185 cm</option>
+                <option value="186">186 cm</option>
+                <option value="187">187 cm</option>
+                <option value="188">188 cm</option>
+                <option value="189">189 cm</option>
+                <option value="190">190 cm ve üzeri</option>
+            </select>
 
+            <!-- Email -->
             <label for="email">E-posta <span class="required">*</span></label>
-            <input type="email" name="mail" id="email" placeholder="ornek@email.com" required>
+            <input type="email" id="email" name="email" placeholder="ornek@email.com" required autocomplete="email">
 
-            <label for="dogumlar">Doğum Tarihi <span class="required">*</span></label>
-            <input type="date" name="dogum" id="dogumlar" required>
+            <!-- Doğum Tarihi -->
+            <label for="dogum">Doğum Tarihi <span class="required">*</span></label>
+            <input type="date" id="dogum" name="dogum" required autocomplete="bday">
 
-           <!-- <label for="ad">Cinsiyet <span class="required">*</span></label>
-            <div class="radio-group">
-                <input type="radio" name="cinsiyet" value="kadin" id="kadin" required>
-                <label for="kadin">Kadın</label>
-                <input type="radio" name="cinsiyet" value="erkek" id="erkek">
-                <label for="erkek">Erkek</label>
-            </div>-->
+            <!-- Cinsiyet -->
             <label>Cinsiyet <span class="required">*</span></label>
-<div class="radio-group">
-    <input type="radio" name="cinsiyet" value="kadin" id="kadin" required>
-    <label for="kadin">Kadın</label>
+            <div class="radio-group">
+                <input type="radio" id="kadin" name="cinsiyet" value="kadin" required>
+                <label for="kadin">Kadın</label>
 
-    <input type="radio" name="cinsiyet" value="erkek" id="erkek">
-    <label for="erkek">Erkek</label>
-</div>
+                <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+                <label for="erkek">Erkek</label>
+            </div>
 
-
-
+            <!-- Fotoğraflar -->
             <div class="file-info">Maksimum Boyut 8 MB</div>
-            
-            <label>Foto #1 <span class="required">*</span></label>
-            <input type="file" name="fotograf1" id="foto1" accept="image/*" required>
+            <label for="foto1">Foto #1 <span class="required">*</span></label>
+            <input type="file" id="foto1" name="foto1" accept="image/*" required>
 
-            <label>Foto #2 <span class="required">*</span></label>
-            <input type="file" name="fotograf2" id="foto2" accept="image/*" required>
+            <label for="foto2">Foto #2 <span class="required">*</span></label>
+            <input type="file" id="foto2" name="foto2" accept="image/*" required>
 
-            <label>Foto #3 (İsteğe Bağlı)</label>
-            <input type="file"  name="fotograf3" id="foto3" accept="image/*">
+            <label for="foto3">Foto #3 (İsteğe Bağlı)</label>
+            <input type="file" id="foto3" name="foto3" accept="image/*">
 
-            <div class="form-group">
-                <label for="instagram">Instagram</label>
-                <input type="text" id="instagram" name="instagram-hesabi" placeholder="lisa_muller">
-            </div>
+            <!-- Sosyal Medya -->
+            <label for="instagram">Instagram</label>
+            <input type="text" id="instagram" name="instagram" placeholder="lisa_muller" autocomplete="username">
 
-            <div class="form-group">
-                <label for="tiktok">TikTok</label>
-                <input type="text" id="tiktok" name="tiktok-hesabi" placeholder="lisa_muller90">
-            </div>
+            <label for="tiktok">TikTok</label>
+            <input type="text" id="tiktok" name="tiktok" placeholder="lisa_muller90" autocomplete="username">
 
             <button type="submit">Başvuruyu Gönder</button>
         </form>
     </div>
 
-    <a href="https://github.com/babak-8/Html-Form-Odevi" class="kodlar">Tasarımın Kodları</a>
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
-
-
-
-
