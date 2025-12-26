@@ -21,7 +21,7 @@ form.addEventListener("submit", function (e) {
 
     // FOTOĞRAFLAR
     const foto1 = document.getElementById("foto1").files[0];
-    const foto2 = document.getElementById("foto2").files[0];
+    
     const foto3 = document.getElementById("foto3").files[0] || null;
 
     const basvuru = {
@@ -34,7 +34,7 @@ form.addEventListener("submit", function (e) {
         boy: boy ? boy + " cm" : "Yok",
         cinsiyet,
         foto1: foto1 ? URL.createObjectURL(foto1) : "Yok",
-        foto2: foto2 ? URL.createObjectURL(foto2) : "Yok",
+        
         foto3: foto3 ? URL.createObjectURL(foto3) : "Yok",
         instagram: instagram ? instagram.name : " ",
         tiktok: tiktok ? tiktok.name : " ",
@@ -49,6 +49,7 @@ form.addEventListener("submit", function (e) {
         form.reset();
     }, 3000);
 });
+
 
 
 
